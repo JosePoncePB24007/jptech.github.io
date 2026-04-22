@@ -5,18 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JP Tech | Full-Stack Developer</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-gray-900 text-white font-sans scroll-smooth">
 
   <!-- Navbar -->
-  <nav class="bg-gray-800 p-4 shadow-lg fixed w-full top-0 z-50">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-cyan-400">JP Tech</h1>
+  <nav class="bg-gray-800 p-4 fixed w-full top-0 z-50">
+    <div class="container mx-auto flex justify-between">
+      <h1 class="text-xl font-bold text-cyan-400">JP Tech</h1>
       <ul class="flex gap-6">
         <li><a href="#" class="hover:text-cyan-400">Inicio</a></li>
         <li><a href="#sobre" class="hover:text-cyan-400">Sobre mí</a></li>
-        <li><a href="#servicios" class="hover:text-cyan-400">Tecnologías</a></li>
+        <li><a href="#tecnologias" class="hover:text-cyan-400">Tecnologías</a></li>
         <li><a href="#proyectos" class="hover:text-cyan-400">Proyectos</a></li>
         <li><a href="#contacto" class="hover:text-cyan-400">Contacto</a></li>
       </ul>
@@ -24,95 +25,116 @@
   </nav>
 
   <!-- Hero -->
-  <section class="text-center py-32 bg-gradient-to-r from-gray-900 to-gray-800 mt-16">
-    <h2 class="text-5xl font-bold mb-6 text-cyan-400">
-      Hola, soy Jose Ponce
-    </h2>
-    <p class="text-gray-300 mb-8 max-w-xl mx-auto">
-      Estudiante de Ingeniería en Software enfocado en desarrollo web Full-Stack 
-      con Java, Spring Boot, React y bases de datos PostgreSQL.
-    </p>
-    <a href="#proyectos" class="bg-cyan-400 text-gray-900 px-8 py-3 rounded-2xl font-semibold hover:bg-cyan-300">
-      Ver Proyectos
-    </a>
-  </section>
+<section class="fade-in text-center py-32 mt-16 bg-gradient-to-r from-gray-900 via-gray-800 to-amber-900">
+  <h2 class="text-5xl md:text-6xl font-bold text-cyan-400 mb-4">
+    JP Tech | Full-Stack Developer
+  </h2>
+
+  <h3 class="text-2xl md:text-3xl font-semibold mb-6 tracking-widest">
+    JOSE PONCE
+  </h3>
+
+  <p class="text-gray-300 mb-8 max-w-xl mx-auto">
+    Estudiante de tercer año de Ingeniería en Desarrollo de Software en la UES,
+    enfocado en el desarrollo web Full-Stack con Java, Spring Boot, React y bases de datos.
+  </p>
+
+  <a href="#proyectos" 
+     class="bg-cyan-400 text-gray-900 px-8 py-3 rounded-2xl font-semibold hover:bg-cyan-300">
+    Ver Proyectos
+  </a>
+</section>
 
   <!-- Sobre mí -->
-  <section id="sobre" class="py-20">
-    <div class="container mx-auto text-center px-6">
+  <section id="sobre" class="py-20 bg-gray-800">
+    <div class="text-center px-6 max-w-3xl mx-auto">
       <h3 class="text-3xl font-bold mb-6 text-cyan-400">Sobre mí</h3>
-      <p class="text-gray-400 max-w-2xl mx-auto">
-        Soy estudiante de Ingeniería en Software con interés en el desarrollo web moderno.
-        Me enfoco en construir aplicaciones completas utilizando tecnologías como 
-        Java, Spring Boot, APIs REST y bases de datos relacionales. 
-        Actualmente estoy desarrollando proyectos Full-Stack como sistemas de inventario y aplicaciones web.
+      <p class="text-gray-400">
+        Soy estudiante de la Universidad de El Salvador (UES), actualmente en tercer año de la carrera 
+        de Ingeniería en Desarrollo de Software. Me interesa el desarrollo de aplicaciones web modernas, 
+        especialmente en el área backend utilizando Java y Spring Boot.
+        <br><br>
+        He trabajado en proyectos académicos como sistemas de inventario y aplicaciones web completas 
+        con integración de base de datos, API REST y frontend.
       </p>
     </div>
   </section>
 
   <!-- Tecnologías -->
-  <section id="servicios" class="py-20 bg-gray-800">
-    <div class="container mx-auto text-center">
-      <h3 class="text-3xl font-bold mb-12 text-cyan-400">Tecnologías</h3>
-      <div class="grid md:grid-cols-3 gap-8 px-6">
-        
-        <div class="bg-gray-900 p-6 rounded-2xl shadow-lg">
-          <h4 class="text-xl font-semibold mb-3">Frontend</h4>
-          <p class="text-gray-400">React, TypeScript, Tailwind CSS</p>
-        </div>
+  <section id="tecnologias" class="py-20">
+    <h3 class="text-3xl font-bold text-center mb-12 text-cyan-400">Tecnologías</h3>
 
-        <div class="bg-gray-900 p-6 rounded-2xl shadow-lg">
-          <h4 class="text-xl font-semibold mb-3">Backend</h4>
-          <p class="text-gray-400">Spring Boot, APIs REST, JWT</p>
-        </div>
+    <div class="grid md:grid-cols-3 gap-8 px-6 text-center">
 
-        <div class="bg-gray-900 p-6 rounded-2xl shadow-lg">
-          <h4 class="text-xl font-semibold mb-3">Base de Datos</h4>
-          <p class="text-gray-400">PostgreSQL, diseño relacional</p>
-        </div>
-
+      <div class="bg-gray-800 p-6 rounded-2xl">
+        <h4 class="text-xl font-semibold mb-3">Frontend</h4>
+        <p class="text-gray-400">React, TypeScript, Tailwind CSS</p>
       </div>
+
+      <div class="bg-gray-800 p-6 rounded-2xl">
+        <h4 class="text-xl font-semibold mb-3">Backend</h4>
+        <p class="text-gray-400">Java, Spring Boot, APIs REST, JWT</p>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-2xl">
+        <h4 class="text-xl font-semibold mb-3">Base de Datos</h4>
+        <p class="text-gray-400">PostgreSQL, SQL, diseño relacional</p>
+      </div>
+
     </div>
   </section>
 
   <!-- Proyectos -->
-  <section id="proyectos" class="py-20">
-    <div class="container mx-auto text-center">
-      <h3 class="text-3xl font-bold mb-12 text-cyan-400">Proyectos</h3>
-      <div class="grid md:grid-cols-2 gap-8 px-6">
+  <section id="proyectos" class="py-20 bg-gray-800">
+  <h3 class="text-3xl font-bold text-center mb-12 text-cyan-400">Proyectos</h3>
 
-        <div class="bg-gray-800 p-6 rounded-2xl shadow">
-          <h4 class="text-xl font-semibold mb-3">Sistema de Inventario</h4>
-          <p class="text-gray-400 mb-3">
-            Aplicación web con Spring Boot y PostgreSQL para la gestión de productos, usuarios y ventas.
-          </p>
-          <span class="text-cyan-400 text-sm">Java | Spring Boot | PostgreSQL</span>
-        </div>
+  <div class="grid md:grid-cols-2 gap-8 px-6">
 
-        <div class="bg-gray-800 p-6 rounded-2xl shadow">
-          <h4 class="text-xl font-semibold mb-3">App Turística SV</h4>
-          <p class="text-gray-400 mb-3">
-            Aplicación web para registrar usuarios y crear itinerarios turísticos personalizados.
-          </p>
-          <span class="text-cyan-400 text-sm">React | API REST | PostgreSQL</span>
-        </div>
-
-      </div>
+    <!-- Proyecto 1 -->
+    <div class="bg-gray-900 p-6 rounded-2xl">
+      <h4 class="text-xl font-semibold mb-3">Gestor de Proyectos Simple</h4>
+      <p class="text-gray-400 mb-3">
+        Aplicación desarrollada en Java orientada a la gestión de proyectos, tareas y empleados,
+        utilizando principios de Programación Orientada a Objetos como herencia, encapsulamiento 
+        y polimorfismo.
+      </p>
+      <span class="text-cyan-400 text-sm">Java | POO</span>
+      <br><br>
+      <a href="#" class="text-cyan-400 hover:underline">Ver repositorio</a>
     </div>
+
+    <!-- Proyecto 2 -->
+    <div class="bg-gray-900 p-6 rounded-2xl">
+      <h4 class="text-xl font-semibold mb-3">DESCUBRE SV</h4>
+      <p class="text-gray-400 mb-3">
+        Aplicación web en desarrollo para registrar usuarios y crear itinerarios turísticos personalizados,
+        integrando backend con Spring Boot, base de datos PostgreSQL y frontend moderno.
+      </p>
+      <span class="text-cyan-400 text-sm">Spring Boot | PostgreSQL | API REST</span>
+      <br><br>
+      <a href="#" class="text-cyan-400 hover:underline">Ver proyecto</a>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Enfoque -->
+  <section class="py-20">
+    <h3 class="text-3xl font-bold text-center mb-8 text-cyan-400">Enfoque</h3>
+    <p class="text-gray-400 text-center max-w-2xl mx-auto">
+      Me enfoco en el desarrollo de aplicaciones web completas (Full-Stack), combinando frontend moderno 
+      con backend robusto y bases de datos bien estructuradas. Busco seguir mejorando mis habilidades 
+      y participar en proyectos reales.
+    </p>
   </section>
 
   <!-- Contacto -->
   <section id="contacto" class="py-20 bg-gray-800">
-    <div class="container mx-auto text-center">
-      <h3 class="text-3xl font-bold mb-8 text-cyan-400">Contacto</h3>
-      <form class="max-w-md mx-auto">
-        <input type="text" placeholder="Nombre" class="w-full p-3 mb-4 bg-gray-900 border border-gray-700 rounded-xl">
-        <input type="email" placeholder="Correo" class="w-full p-3 mb-4 bg-gray-900 border border-gray-700 rounded-xl">
-        <textarea placeholder="Mensaje" class="w-full p-3 mb-4 bg-gray-900 border border-gray-700 rounded-xl"></textarea>
-        <button class="bg-cyan-400 text-gray-900 px-6 py-2 rounded-xl font-semibold hover:bg-cyan-300">
-          Enviar
-        </button>
-      </form>
+    <h3 class="text-3xl font-bold text-center mb-8 text-cyan-400">Contacto</h3>
+
+    <div class="text-center text-gray-400">
+      <p>Email: pb24007@ues.edu.sv</p>
+      <p>GitHub: github.com/JosePoncePB24007</p>
     </div>
   </section>
 
