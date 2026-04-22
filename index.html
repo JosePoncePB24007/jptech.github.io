@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JP Tech | Full-Stack Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-white font-sans scroll-smooth">
+
+  <!-- Navbar -->
+  <nav class="bg-gray-800 p-4 shadow-lg fixed w-full top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-cyan-400">JP Tech</h1>
+      <ul class="flex gap-6">
+        <li><a href="#" class="hover:text-cyan-400">Inicio</a></li>
+        <li><a href="#sobre" class="hover:text-cyan-400">Sobre mí</a></li>
+        <li><a href="#servicios" class="hover:text-cyan-400">Tecnologías</a></li>
+        <li><a href="#proyectos" class="hover:text-cyan-400">Proyectos</a></li>
+        <li><a href="#contacto" class="hover:text-cyan-400">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="text-center py-32 bg-gradient-to-r from-gray-900 to-gray-800 mt-16">
+    <h2 class="text-5xl font-bold mb-6 text-cyan-400">
+      Hola, soy Jose Ponce
+    </h2>
+    <p class="text-gray-300 mb-8 max-w-xl mx-auto">
+      Estudiante de Ingeniería en Software enfocado en desarrollo web Full-Stack 
+      con Java, Spring Boot, React y bases de datos PostgreSQL.
+    </p>
+    <a href="#proyectos" class="bg-cyan-400 text-gray-900 px-8 py-3 rounded-2xl font-semibold hover:bg-cyan-300">
+      Ver Proyectos
+    </a>
+  </section>
+
+  <!-- Sobre mí -->
+  <section id="sobre" class="py-20">
+    <div class="container mx-auto text-center px-6">
+      <h3 class="text-3xl font-bold mb-6 text-cyan-400">Sobre mí</h3>
+      <p class="text-gray-400 max-w-2xl mx-auto">
+        Soy estudiante de Ingeniería en Software con interés en el desarrollo web moderno.
+        Me enfoco en construir aplicaciones completas utilizando tecnologías como 
+        Java, Spring Boot, APIs REST y bases de datos relacionales. 
+        Actualmente estoy desarrollando proyectos Full-Stack como sistemas de inventario y aplicaciones web.
+      </p>
+    </div>
+  </section>
+
+  <!-- Tecnologías -->
+  <section id="servicios" class="py-20 bg-gray-800">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-12 text-cyan-400">Tecnologías</h3>
+      <div class="grid md:grid-cols-3 gap-8 px-6">
+        
+        <div class="bg-gray-900 p-6 rounded-2xl shadow-lg">
+          <h4 class="text-xl font-semibold mb-3">Frontend</h4>
+          <p class="text-gray-400">React, TypeScript, Tailwind CSS</p>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-2xl shadow-lg">
+          <h4 class="text-xl font-semibold mb-3">Backend</h4>
+          <p class="text-gray-400">Spring Boot, APIs REST, JWT</p>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-2xl shadow-lg">
+          <h4 class="text-xl font-semibold mb-3">Base de Datos</h4>
+          <p class="text-gray-400">PostgreSQL, diseño relacional</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="py-20">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-12 text-cyan-400">Proyectos</h3>
+      <div class="grid md:grid-cols-2 gap-8 px-6">
+
+        <div class="bg-gray-800 p-6 rounded-2xl shadow">
+          <h4 class="text-xl font-semibold mb-3">Sistema de Inventario</h4>
+          <p class="text-gray-400 mb-3">
+            Aplicación web con Spring Boot y PostgreSQL para la gestión de productos, usuarios y ventas.
+          </p>
+          <span class="text-cyan-400 text-sm">Java | Spring Boot | PostgreSQL</span>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-2xl shadow">
+          <h4 class="text-xl font-semibold mb-3">App Turística SV</h4>
+          <p class="text-gray-400 mb-3">
+            Aplicación web para registrar usuarios y crear itinerarios turísticos personalizados.
+          </p>
+          <span class="text-cyan-400 text-sm">React | API REST | PostgreSQL</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-20 bg-gray-800">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-8 text-cyan-400">Contacto</h3>
+      <form class="max-w-md mx-auto">
+        <input type="text" placeholder="Nombre" class="w-full p-3 mb-4 bg-gray-900 border border-gray-700 rounded-xl">
+        <input type="email" placeholder="Correo" class="w-full p-3 mb-4 bg-gray-900 border border-gray-700 rounded-xl">
+        <textarea placeholder="Mensaje" class="w-full p-3 mb-4 bg-gray-900 border border-gray-700 rounded-xl"></textarea>
+        <button class="bg-cyan-400 text-gray-900 px-6 py-2 rounded-xl font-semibold hover:bg-cyan-300">
+          Enviar
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-center p-6">
+    <p class="text-gray-400">© 2026 JP Tech | Full-Stack Developer</p>
+  </footer>
+
+</body>
+</html>
